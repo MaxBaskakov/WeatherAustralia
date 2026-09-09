@@ -15,9 +15,10 @@ I prepared data for models
 
 Then i compared 2 models based on their accuracy 
 
-Model                    AccuracyTrain  AccuracyVal  AccuracyTest
-0  LogisticRegression       0.850174     0.852881      0.839917
-1        RandomForest       0.854871     0.845453      0.832140
+| Model | Accuracy Train | Accuracy Val | Accuracy Test |
+|---|---:|---:|---:|
+| Logistic Regression | 0.850174 | 0.852881 | 0.839917 |
+| Random Forest | 0.854871 | 0.845453 | 0.832140 |
 
 
 
