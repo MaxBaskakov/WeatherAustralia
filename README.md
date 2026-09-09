@@ -29,6 +29,6 @@ ROC-AUC: 0.8720747385147327
 
 Now create a confusion matrix(ConfusionMatrix.png)
 
-We can see that actually u can use this model to predict rainy days.
+The ROC-AUC score of 0.8721 shows that the model is quite good at distinguishing between rainy and non-rainy days.
 However, the Recall is only 0.4633, which means that the model detects only about 46% of the actual rainy days.
 So i wouldn't recommend u to blind trust when model says "it won't rain tomorrow".
