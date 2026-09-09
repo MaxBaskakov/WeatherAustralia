@@ -59,6 +59,10 @@ train_inputs[numeric_cols] = scaler.transform(train_inputs[numeric_cols])
 val_inputs[numeric_cols] = scaler.transform(val_inputs[numeric_cols])
 test_inputs[numeric_cols] = scaler.transform(test_inputs[numeric_cols])
 
+train_inputs[object_cols] =  train_inputs[object_cols].fillna("Unknown")
+val_inputs[object_cols] = val_inputs[object_cols].fillna("Unknown")
+test_inputs[object_cols] = test_inputs[object_cols].fillna("Unknown")
+
 from sklearn.preprocessing import OneHotEncoder
 
 encoder = OneHotEncoder(sparse_output=False, handle_unknown="ignore")
@@ -124,7 +128,7 @@ val_proba_yes = val_proba[:,1]
 roc = roc_auc_score(val_target, val_proba_yes)
 
 print()
-print(f"Metrics based on validation data \nPrecision:{prec} \nRecall:{rec} \nF1:{f1} \nROC-AUC{roc}")
+print(f"Metrics based on validation data \nPrecision: {prec} \nRecall: {rec} \nF1: {f1} \nROC-AUC: {roc}")
 
 from sklearn.metrics import confusion_matrix
 matrix = confusion_matrix(val_target, val_predict)
