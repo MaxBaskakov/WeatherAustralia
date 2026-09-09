@@ -6,12 +6,12 @@ https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package?resource=d
 
 I will use two classification models Logistic and RandomForest and see witch one is better to my task.
 
-I prepared data for models  
--splitting the data into train, validation, and test sets;
--removing rows with missing values in RainTomorrow;
--filling missing values in numerical columns using the mean;
--scaling numerical features;
--encoding categorical features using One-Hot Encoding.
+I prepared data for models:    
+- Splitting the data into train, validation, and test sets;
+- Removing rows with missing values in RainTomorrow;
+- Filling missing values in numerical columns using the mean;
+- Scaling numerical features;
+- Encoding categorical features using One-Hot Encoding.
 
 Then i compared 2 models based on their accuracy 
 
