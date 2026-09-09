@@ -24,10 +24,10 @@ Then i compared 2 models based on their accuracy
 
 We can see that Logistic is a little better so i will use other metrics on it based on validation data.
 
-Precision: 0.7454786060873401 
-Recall: 0.46326754385964913 
-F1: 0.5714285714285714 
-ROC-AUC: 0.8720747385147327
+**Precision: 0.7455**
+**Recall: 0.4633** 
+**F1: 0.57142** 
+**ROC-AUC: 0.8721**
 
 Now create a confusion matrix(ConfusionMatrix.png)
 
